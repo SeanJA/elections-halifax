@@ -13,7 +13,7 @@
 			HRM - Find Your District
 		</title><!-- Included CSS Files -->
 		<link rel="stylesheet" href="stylesheets/app.css" type="text/css">
-		<script src="javascripts/foundation/modernizr.foundation.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/modernizr.foundation.js"></script>
 		<!-- IE Fix for HTML5 Tags -->
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,21 +58,25 @@
 				</ul>
 			</div>
 		</footer>
-		<script src="javascripts/foundation/jquery.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
-		<script src="javascripts/foundation/jquery.foundation.accordion.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.alerts.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.buttons.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.forms.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.navigation.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.orbit.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.reveal.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.tabs.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.foundation.tooltips.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.placeholder.js" type="text/javascript"></script>
-
-		<script src="javascripts/foundation/app.js" type="text/javascript"></script>
-		
+		<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
+		<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
+		<script src="javascripts/foundation/jquery.placeholder.js"></script>
+		<script src="javascripts/foundation/app.js"></script>
+		<script>
+            var _gaq=[['_setAccount','<?php echo $google_analytics; ?>'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
 	</body>
 </html>
