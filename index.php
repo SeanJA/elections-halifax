@@ -20,6 +20,7 @@
 	<![endif]-->
 	</head>
 	<body>
+		<a class="hide-for-small" href="https://github.com/SeanJA/elections-halifax"><img id="fork-me" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 		<header class="row">
 			<div class="twelve columns">
 				<h2>
@@ -54,6 +55,9 @@
 					</li>
 					<li>
 						<small>Using <a target="_blank" href="http://foundation.zurb.com/">Foundation</a></small>
+					</li>
+					<li>
+						<small>Code <a target="_blank" href="https://github.com/SeanJA/elections-halifax">github</a></small>
 					</li>
 				</ul>
 			</div>
