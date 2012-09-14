@@ -20,7 +20,7 @@ function initialize() {
         center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
-    map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     var layer = new google.maps.FusionTablesLayer({
         query: {
             select: 'col2',
@@ -69,6 +69,7 @@ function codeAddress() {
         $('#find-it').click(function() {
             clearOverlays();
             codeAddress();
+            window.location.hash="map-canvas";
         })
     });
 
