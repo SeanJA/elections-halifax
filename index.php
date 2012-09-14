@@ -42,7 +42,7 @@
 			<div class="eight columns">
 				<div id="map_canvas" style=""></div>
 			</div>
-		</div><!-- Included JS Files (Uncompressed) -->
+		</div>
 		<footer class="row">
 			<div class="twelve columns">
 				<ul>
@@ -60,7 +60,6 @@
 		</footer>
 		<script src="javascripts/foundation/jquery.js" type="text/javascript"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
-		<script src="javascripts/script.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.accordion.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.alerts.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.buttons.js" type="text/javascript"></script>
@@ -71,7 +70,8 @@
 		<script src="javascripts/foundation/jquery.foundation.reveal.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.tabs.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.tooltips.js" type="text/javascript"></script>
-		<script src="javascripts/foundation/jquery.placeholder.js" type="text/javascript"></script><!-- Application Javascript, safe to override -->
+		<script src="javascripts/foundation/jquery.placeholder.js" type="text/javascript"></script>
+
 		<script src="javascripts/foundation/app.js" type="text/javascript"></script>
 		
 	</body>
