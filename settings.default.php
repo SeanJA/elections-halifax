@@ -3,4 +3,4 @@
 $sensor = 'true';
 $api_key = '';
 $google_analytics = '';
-$districts = file_get_contents('districts/districts.json');
+$polling_stations = file_get_contents('districts/polling-stations.json');

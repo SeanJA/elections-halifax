@@ -42,6 +42,17 @@ function codeAddress() {
                 position: results[0].geometry.location
             });
             markersArray.push(marker);
+
+            $.ajax({
+              type: "GET",
+              url: "get-district.php",
+              data: {'long': results[0].geometry.location.Ya,
+                     'lat': results[0].geometry.location.Xa},
+              dataType: "json"
+            }).done(function( msg ) {
+              alert( "Data Saved: " + msg );
+            });
+            
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
         }
