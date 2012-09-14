@@ -10,53 +10,16 @@
 		<meta charset="utf-8"><!-- Set the viewport width to device width for mobile -->
 		<meta name="viewport" content="width=device-width">
 		<title>
-			Welcome to Foundation
+			HRM - Find Your District
 		</title><!-- Included CSS Files -->
 		<link rel="stylesheet" href="stylesheets/app.css" type="text/css">
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script src="javascripts/foundation/modernizr.foundation.js" type="text/javascript"></script>
 		<!-- IE Fix for HTML5 Tags -->
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script>
-		var geocoder;
-		var map;
-		function initialize() {
-			geocoder = new google.maps.Geocoder();
-			var latlng = new google.maps.LatLng(44.653024,-63.597107);
-			var mapOptions = {
-			  zoom: 8,
-			  center: latlng,
-			  mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-			var layer = new google.maps.FusionTablesLayer({
-	          query: {
-	            select: 'col2',
-	            from: '1gaFfc1uY9wbu7M_W-WOol1zvXLO3mVOCIawbY78'
-	          }
-	        });
-        	layer.setMap(map);
-		}
-
-		function codeAddress() {
-			var address = document.getElementById('postal-code').value + ' Nova Scotia, Canada';
-			geocoder.geocode( { 'address': address}, function(results, status) {
-			  if (status == google.maps.GeocoderStatus.OK) {
-			    map.setCenter(results[0].geometry.location);
-			    var marker = new google.maps.Marker({
-			        map: map,
-			        position: results[0].geometry.location
-			    });
-			  } else {
-			    alert('Geocode was not successful for the following reason: ' + status);
-			  }
-			});
-		}
-	</script>
 	</head>
-	<body onload="initialize();">
+	<body>
 		<header class="row">
 			<div class="twelve columns">
 				<h2>
@@ -74,18 +37,20 @@
 					Enter your postal code
 				</h4>
 				<input type="text" value="b3h 1s3" name="postal-code" id="postal-code" />
-				<input type="button" value="Find It!" onclick="codeAddress()" />
+				<a id="find-it" class="large button">Find It!</a>
 			</div>
 			<div class="eight columns">
-				<div id="map_canvas" style="height:800px; width: 100%; top:30px"></div>
+				<div id="map_canvas" style=""></div>
 			</div>
 		</div><!-- Included JS Files (Uncompressed) -->
 		<footer class="row">
 			<div class="twelve columns">
-				<small>Data from OpenFile.ca</small>
+				<small>District data from <a target="_blank" href="http://www.openfile.ca/halifax/data/hrm-election-2012-district-profiles">OpenFile.ca</a></small>
 			</div>
 		</footer>
 		<script src="javascripts/foundation/jquery.js" type="text/javascript"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="javascripts/script.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.accordion.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.alerts.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.buttons.js" type="text/javascript"></script>
