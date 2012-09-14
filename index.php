@@ -91,6 +91,10 @@
 				</ul>
 			</div>
 		</footer>
+		<script>
+			var polling_stations = <?php echo $polling_stations; ?>
+			var districts = <?php echo $districts; ?>
+		</script>
 		<script src="javascripts/foundation/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
 		<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
