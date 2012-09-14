@@ -40,7 +40,7 @@
 				<a id="find-it" class="large button">Find It!</a>
 			</div>
 			<div class="eight columns">
-				<div id="map_canvas" style=""></div>
+				<div id="map-canvas"></div>
 			</div>
 		</div>
 		<footer class="row">
