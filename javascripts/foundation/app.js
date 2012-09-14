@@ -69,7 +69,7 @@ function codeAddress() {
         $('#find-it').click(function() {
             clearOverlays();
             codeAddress();
-            //window.location.hash="map-canvas";
+            window.location.hash="map-canvas";
         })
     });
 
