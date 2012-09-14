@@ -56,7 +56,14 @@
 	border: 0;
 }
 
+.addthis_toolbox img,
 .map img {
 	max-width: none;
 	height: auto
+}
+
+.map *, .addthis_toolbox *{
+	-webkit-box-sizing:padding-box !important;
+	-moz-box-sizing:padding-box !important;
+	box-sizing:padding-box !important;
 }
