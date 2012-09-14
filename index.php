@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require 'settings.php'; ?><!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -45,11 +45,21 @@
 		</div><!-- Included JS Files (Uncompressed) -->
 		<footer class="row">
 			<div class="twelve columns">
-				<small>District data from <a target="_blank" href="http://www.openfile.ca/halifax/data/hrm-election-2012-district-profiles">OpenFile.ca</a></small>
+				<ul>
+					<li>
+						<small>District data from <a target="_blank" href="http://www.openfile.ca/halifax/data/hrm-election-2012-district-profiles">OpenFile.ca</a></small>
+					</li>
+					<li>
+						<small>Built By <a target="_blank" href="http://seanja.info">SeanJA</a></small>
+					</li>
+					<li>
+						<small>Using <a target="_blank" href="http://foundation.zurb.com/">Foundation</a></small>
+					</li>
+				</ul>
 			</div>
 		</footer>
 		<script src="javascripts/foundation/jquery.js" type="text/javascript"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
 		<script src="javascripts/script.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.accordion.js" type="text/javascript"></script>
 		<script src="javascripts/foundation/jquery.foundation.alerts.js" type="text/javascript"></script>
