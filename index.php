@@ -9,6 +9,7 @@
 	<head>
 		<meta charset="utf-8"><!-- Set the viewport width to device width for mobile -->
 		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 		<title>
 			HRM - Find Your District
 		</title><!-- Included CSS Files -->
