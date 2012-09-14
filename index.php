@@ -41,22 +41,19 @@
 			<div class="eight columns">
 				
 			</div>
-
 		</div><!-- Included JS Files (Uncompressed) -->
-		<script src="javascripts/foundation/jquery.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.accordion.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.alerts.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.buttons.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.forms.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.navigation.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.orbit.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.reveal.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.tabs.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.foundation.tooltips.js" type="text/javascript">
-</script><script src="javascripts/foundation/jquery.placeholder.js" type="text/javascript">
-</script><!-- Application Javascript, safe to override -->
-		<script src="javascripts/foundation/app.js" type="text/javascript">
-</script>
+		<script src="javascripts/foundation/jquery.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.accordion.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.alerts.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.buttons.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.forms.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.navigation.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.orbit.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.reveal.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.tabs.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.foundation.tooltips.js" type="text/javascript"></script>
+		<script src="javascripts/foundation/jquery.placeholder.js" type="text/javascript"></script><!-- Application Javascript, safe to override -->
+		<script src="javascripts/foundation/app.js" type="text/javascript"></script>
 	</body>
 </html>
