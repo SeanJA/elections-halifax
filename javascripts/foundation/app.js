@@ -45,7 +45,7 @@ function codeAddress() {
                 icon: 'images/house.png'
             });
             markersArray.push(marker);
-            load_data(results);
+            loadData(results);
             map.setZoom(14);
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
@@ -53,7 +53,7 @@ function codeAddress() {
     });
 }
 
-function load_data(results) {
+function loadData(results) {
     $.ajax({
         type: "GET",
         url: "get-district.php",
@@ -63,12 +63,12 @@ function load_data(results) {
         },
         dataType: "json"
     }).done(function(key) {
-        add_polling_stations(polling_stations[key]);
-        district_data(districts[key]);
+        addPollingStations(polling_stations[key]);
+        districtData(districts[key]);
     });
 }
 
-function add_polling_stations(data) {
+function addPollingStations(data) {
     for (i in data) {
         var pos = data[i];
         if(pos){
@@ -86,7 +86,7 @@ function add_polling_stations(data) {
     }
 }
 
-function district_data(data){
+function districtData(data){
     string = '';
     string += '<h5>'+data.district+': ' + data.name + '</h5>';
     string += '<h6>Voters: '+data.voters+'</h6>';
@@ -98,7 +98,7 @@ function district_data(data){
         }
     }
     string += '</ul>';
-    $('#district-data').html(string);
+    $('#district-data').html(string).addClass('panel');
 }
 
 function listenMarker(marker, info) {
@@ -135,6 +135,7 @@ function listenMarker(marker, info) {
 
         initialize();
         $('#find-it').click(function() {
+            $('#district-data').html('').removeClass('panel');
             clearOverlays();
             codeAddress();
             window.location.hash = "map-canvas";
