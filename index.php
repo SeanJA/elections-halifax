@@ -49,13 +49,12 @@
 			</div>
 			<div class="eight columns">
 				<div id="map-canvas" class="map"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="eight columns offset-by-four">
 				<div id="district-data">
 				</div>
 			</div>
+		</div>
+		<div class="row">
+			
 		</div>
 		<div class="row">
 			<div class="eight columns centered">
