@@ -1,6 +1,8 @@
 var geocoder;
 var map;
 var markersArray = [];
+var tooltip = null;
+
 
 function clearOverlays() {
     if (markersArray) {
@@ -39,25 +41,76 @@ function codeAddress() {
             map.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({
                 map: map,
-                position: results[0].geometry.location
+                position: results[0].geometry.location,
+                icon: 'images/house.png'
             });
             markersArray.push(marker);
-
-            $.ajax({
-              type: "GET",
-              url: "get-district.php",
-              data: {'long': results[0].geometry.location.Ya,
-                     'lat': results[0].geometry.location.Xa},
-              dataType: "json"
-            }).done(function( msg ) {
-              alert( "Data Saved: " + msg );
-            });
-            
+            load_data(results);
+            map.setZoom(14);
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
         }
     });
 }
+
+function load_data(results) {
+    $.ajax({
+        type: "GET",
+        url: "get-district.php",
+        data: {
+            'long': results[0].geometry.location.Ya,
+            'lat': results[0].geometry.location.Xa
+        },
+        dataType: "json"
+    }).done(function(key) {
+        add_polling_stations(polling_stations[key]);
+        district_data(districts[key]);
+    });
+}
+
+function add_polling_stations(data) {
+    for (i in data) {
+        var pos = data[i];
+        var location = new google.maps.LatLng(pos['lat'], pos['long']);
+        var info = '<b>'+pos['place_name'] + '</b>' + '<p>' + pos['address'] + ', ' + pos['city'] + '</p>';
+        var marker = new google.maps.Marker({
+            map: map,
+            position: location,
+            title: pos['place_name'],
+            icon: 'images/administration.png'
+        });
+        listenMarker(marker, info);
+        markersArray.push(marker);
+    }
+}
+
+function district_data(data){
+    string = '';
+    string += '<h5>'+data.district+': ' + data.name + '</h5>';
+    string += '<h6>Voters: '+data.voters+'</h6>';
+    string += '<h6> Candidates: </h6>';
+    string += '<ul>';
+    for(i in data['candidates']){
+        string += '<li>'+data['candidates'][i].name+'</li>';
+    }
+    string += '</ul>';
+    $('#district-data').html(string);
+}
+
+function listenMarker(marker, info) {
+    
+    google.maps.event.addListener(marker, 'click', function() {
+        if(tooltip){
+            tooltip.close();
+        }
+        tooltip = new google.maps.InfoWindow({
+            content: info
+        });
+        tooltip.open(map, marker);
+    });
+    //toolTipsArray[tooltip];
+}
+
 
 
 (function($) {
@@ -80,7 +133,7 @@ function codeAddress() {
         $('#find-it').click(function() {
             clearOverlays();
             codeAddress();
-            window.location.hash="map-canvas";
+            window.location.hash = "map-canvas";
         })
     });
 

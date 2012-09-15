@@ -52,13 +52,18 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="eight columns offset-by-four">
+				<div id="district-data">
+				</div>
+			</div>
+		</div>
+		<div class="row">
 			<div class="eight columns centered">
 				<hr />
 			</div>
 		</div>
 		<div class="row">
 			<div class="four columns centered">
-
 				<!-- AddThis Button BEGIN -->
 				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 				<a class="addthis_button_preferred_1"></a>
@@ -92,7 +97,8 @@
 			</div>
 		</footer>
 		<script>
-			var polling_stations = <?php echo $polling_stations; ?>
+			var polling_stations = <?php echo $polling_stations; ?>;
+			var districts = <?php echo $districts; ?>;
 		</script>
 		<script src="javascripts/foundation/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
