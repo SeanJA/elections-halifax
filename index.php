@@ -8,6 +8,15 @@
 	<!--<![endif]-->
 	<head>
 		<meta charset="utf-8"><!-- Set the viewport width to device width for mobile -->
+		<meta property="fb:admins" content="119100167" />
+
+		<meta property="og:title" content="HRM - Find Your District" />
+		<meta property="og:description" content="Your district may have changed, find your new one." />
+		<meta property="og:image" content="images/screenshot.png" />
+		<meta property="og:type" content="activity" />
+		<meta property="og:url" content="http://election.seanja.com" />
+		<meta property="og:site_name" content="HRM - Find Your District" />
+
 		<meta name="viewport" content="width=device-width">
 		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 		<title>
