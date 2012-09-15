@@ -1,7 +1,8 @@
 #################
 ## Project
 #################
-
+*.sublime-project
+*.sublime-workspace
 .sass-cache
 settings.php
 
