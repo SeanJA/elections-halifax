@@ -71,16 +71,18 @@ function load_data(results) {
 function add_polling_stations(data) {
     for (i in data) {
         var pos = data[i];
-        var location = new google.maps.LatLng(pos['lat'], pos['long']);
-        var info = '<b>'+pos['place_name'] + '</b>' + '<p>' + pos['address'] + ', ' + pos['city'] + '</p>';
-        var marker = new google.maps.Marker({
-            map: map,
-            position: location,
-            title: pos['place_name'],
-            icon: 'images/administration.png'
-        });
-        listenMarker(marker, info);
-        markersArray.push(marker);
+        if(pos){
+            var location = new google.maps.LatLng(pos['lat'], pos['long']);
+            var info = '<b>'+pos['place_name'] + '</b>' + '<p>' + pos['address'] + ', ' + pos['city'] + '</p>';
+            var marker = new google.maps.Marker({
+                map: map,
+                position: location,
+                title: pos['place_name'],
+                icon: 'images/administration.png'
+            });
+            listenMarker(marker, info);
+            markersArray.push(marker);
+        }
     }
 }
 
@@ -91,7 +93,9 @@ function district_data(data){
     string += '<h6> Candidates: </h6>';
     string += '<ul>';
     for(i in data['candidates']){
-        string += '<li>'+data['candidates'][i].name+'</li>';
+        if(typeof data['candidates'][i] !== 'undefined'){
+            string += '<li>'+data['candidates'][i].name+'</li>';
+        }
     }
     string += '</ul>';
     $('#district-data').html(string);
