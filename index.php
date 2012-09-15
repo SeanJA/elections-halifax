@@ -43,13 +43,16 @@
 			</div>
 		</header>
 		<div class="row">
-			<div class="four columns centered">
+			<div class="five columns centered">
 				<ul class="link-list">
 					<li>
 						<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 					</li>
 					<li>
-						<div class="fb-like" data-href="http://election.seanja.com" data-send="true" data-layout="button_count" data-width="126" data-show-faces="false"></div>
+						<div class="fb-like" data-href="http://election.seanja.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+					</li>
+					<li>
+						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
 					</li>
 				</ul>
 			</div>
@@ -80,13 +83,16 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="four columns centered">
+			<div class="five columns centered">
 				<ul class="link-list">
 					<li>
 						<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 					</li>
 					<li>
-						<div class="fb-like" data-href="http://election.seanja.com" data-send="true" data-layout="button_count" data-width="126" data-show-faces="false"></div>
+						<div class="fb-like" data-href="http://election.seanja.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+					</li>
+					<li>
+						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
 					</li>
 				</ul>
 			</div>
@@ -134,7 +140,6 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
         <div id="fb-root"></div>
-		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
@@ -143,5 +148,6 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 	</body>
 </html>
