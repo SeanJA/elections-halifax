@@ -63,11 +63,15 @@
 }
 
 .map *, .addthis_toolbox *{
-	-webkit-box-sizing:padding-box !important;
-	-moz-box-sizing:padding-box !important;
-	box-sizing:padding-box !important;
+	-webkit-box-sizing: padding-box !important;
+	-moz-box-sizing: padding-box !important;
+	box-sizing: padding-box !important;
 }
 
 #find-it{
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+#district-data{
+	margin-top: 10px;
 }
