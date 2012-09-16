@@ -42,17 +42,17 @@
 				<hr>
 			</div>
 		</header>
-		<div class="row">
-			<div class="five columns centered">
+		<div class="row hide-for-small">
+			<div class="seven columns centered">
 				<ul class="link-list">
 					<li>
 						<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 					</li>
 					<li>
-						<div class="fb-like" data-href="http://election.seanja.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
 					</li>
 					<li>
-						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
+						<div class="fb-like" ref="top" data-href="http://election.seanja.com" data-send="true" data-width="212" data-show-faces="false"></div>
 					</li>
 				</ul>
 			</div>
@@ -83,16 +83,16 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="five columns centered">
+			<div class="seven columns centered">
 				<ul class="link-list">
 					<li>
 						<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 					</li>
 					<li>
-						<div class="fb-like" data-href="http://election.seanja.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
 					</li>
 					<li>
-						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
+						<div class="fb-like" ref="bottom" data-href="http://election.seanja.com" data-send="true" data-width="212" data-show-faces="false"></div>
 					</li>
 				</ul>
 			</div>
