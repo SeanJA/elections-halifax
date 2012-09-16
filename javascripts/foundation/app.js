@@ -91,13 +91,24 @@ function districtData(data){
     string += '<h5>'+data.district+': ' + data.name + '</h5>';
     string += '<h6>Voters: '+data.voters+'</h6>';
     string += '<h6> Candidates: </h6>';
-    string += '<ul>';
+    
     for(i in data['candidates']){
         if(typeof data['candidates'][i] !== 'undefined'){
-            string += '<li>'+data['candidates'][i].name+'</li>';
+            var cdt = data['candidates'][i];
+            string += '<strong>'+cdt.name+'</strong>';
+            string += '<ul>';
+                if(cdt.site !== ''){
+                    string += '<li>Website : <a target="_blank" href="'+cdt.site+'">'+cdt.site+'</a></li>';
+                }
+                if(cdt.twitter !== ''){
+                    string += '<li>Twitter : <a target="_blank" href="https://twitter.com/'+cdt.twitter+'">'+cdt.twitter+'</a></li>';
+                }
+                if(cdt.email !== ''){
+                    string += '<li>Email : <a target="_blank" href="mailto:'+cdt.email+'">'+cdt.email+'</a></li>';
+                }
+            string += '</ul>';
         }
     }
-    string += '</ul>';
     $('#district-data').html(string).addClass('panel');
 }
 

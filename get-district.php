@@ -13,7 +13,7 @@ function is_in_polygon($vertices_x, $vertices_y, $longitude_x, $latitude_y){
 
 
 function find_district($longitude_x, $latitude_y){
-	$fh = fopen('districts/districts_kml.csv', 'r');
+	$fh = fopen('data/districts_kml.csv', 'r');
 	$first = true;
 	while($row = fgetcsv($fh)){
 		if($first){
