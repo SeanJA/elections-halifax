@@ -43,13 +43,16 @@
 			</div>
 		</header>
 		<div class="row hide-for-small">
-			<div class="seven columns centered">
+			<div class="eight columns centered">
 				<ul class="link-list">
 					<li>
-						<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://election.seanja.com" data-hashtags="votehrm" data-dnt="true">Tweet</a>
 					</li>
 					<li>
 						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
+					</li>
+					<li>
+						<div class="g-plus" data-action="share" data-annotation="bubble" data-height="15" data-href="http://election.seanja.com"></div>
 					</li>
 					<li>
 						<div class="fb-like" ref="top" data-href="http://election.seanja.com" data-send="true" data-width="212" data-show-faces="false"></div>
@@ -83,13 +86,16 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="seven columns centered">
+			<div class="eight columns centered">
 				<ul class="link-list">
 					<li>
-						<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://election.seanja.com" data-hashtags="votehrm" data-dnt="true">Tweet</a>
 					</li>
 					<li>
 						<script type="IN/Share" data-url="http://election.seanja.com" data-counter="right"></script>
+					</li>
+					<li>
+						<div class="g-plus" data-action="share" data-annotation="bubble" data-height="15" data-href="http://election.seanja.com"></div>
 					</li>
 					<li>
 						<div class="fb-like" ref="bottom" data-href="http://election.seanja.com" data-send="true" data-width="212" data-show-faces="false"></div>
@@ -149,5 +155,6 @@
 		}(document, 'script', 'facebook-jssdk'));</script>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 	</body>
 </html>
