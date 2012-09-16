@@ -22,18 +22,19 @@
 		<title>
 			HRM - Find Your District
 		</title><!-- Included CSS Files -->
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="stylesheets/app.css" type="text/css">
 		<script src="javascripts/foundation/modernizr.foundation.js"></script>
 		<!-- IE Fix for HTML5 Tags -->
 		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<a class="hide-for-small" href="https://github.com/SeanJA/elections-halifax"><img id="fork-me" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 		<header class="row">
 			<div class="twelve columns">
-				<h2>
+				<h2 class="fancy">
 					Find your new district
 				</h2>
 				<p>
@@ -104,7 +105,15 @@
 			</div>
 		</div>
 		<footer class="row">
-			<div class="two columns offset-by-ten">
+			<div class="ten columns">
+				<p>
+					Disclaimer: While I tried to get this stuff right, I makde no promise that I did. If you see a problem (or you have some of the links that I missed...), or you want something else on here... hit me up on <a target="_blank" href="http://twitter.com/SeanJA">@SeanJA</a>, or on app.net <a target="_blank" href="http://alpha.app.net">@SeanJA</a> I will see what I can do.
+				</p>
+				<p>
+					Wanna see me elsewhere / see other things that I have done? <a target="_blank" href="http://seanja.info">Take a look over here.</a>
+				</p>
+			</div>
+			<div class="two columns">
 				<ul>
 					<li>
 						<small>District data from <a target="_blank" href="http://www.openfile.ca/halifax/data/hrm-election-2012-district-profiles">OpenFile.ca</a></small>
