@@ -5,7 +5,7 @@ var tooltip = null;
 var loadedDistrict = null;
 
 
-function clearOverlays() {
+function clearMarkers() {
     if (markersArray) {
         for (var i = 0; i < markersArray.length; i++) {
             markersArray[i].setMap(null);
@@ -71,6 +71,7 @@ function loadData(y, x) {
     }).done(function(key) {
         //don't reload the same data... that would be silly
         if(loadedDistrict !== key){
+            clearMarkers();
             addPollingStations(polling_stations[key]);
             addDistrictData(districts[key]);
             loadedDistrict = key;
@@ -158,7 +159,7 @@ function listenMarker(marker, info) {
         initialize();
         $('#find-it').click(function() {
             $('#district-data').html('').removeClass('panel');
-            clearOverlays();
+            clearMarkers();
             codeAddress();
             window.location.hash = "map-canvas";
         })
