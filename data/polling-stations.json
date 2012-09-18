@@ -183,10 +183,10 @@
         {
             "district": "3",
             "place_name": "Eastern Passage Education Centre Junior High School",
-            "address": "93 Samual Danial Dr",
+            "address": "93 Samuel Danial Drive",
             "city": "Dartmouth",
-            "long": "-63.568182",
-            "lat": "44.663897"
+            "long": "-63.515224",
+            "lat": "44.638735"
         },
         {
             "district": "3",
@@ -843,8 +843,8 @@
             "place_name": "The Berkeley - Bedford",
             "address": "2 Conroy Run",
             "city": "Bedford",
-            "long": "-63.744311",
-            "lat": "44.6819866"
+            "long": "-63.673241",
+            "lat": "44.717483"
         },
         {
             "district": "16",
