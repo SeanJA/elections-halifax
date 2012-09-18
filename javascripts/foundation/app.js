@@ -2,6 +2,7 @@ var geocoder;
 var map;
 var markersArray = [];
 var tooltip = null;
+var loadedDistrict = null;
 
 
 function clearOverlays() {
@@ -29,7 +30,12 @@ function initialize() {
             from: '1gaFfc1uY9wbu7M_W-WOol1zvXLO3mVOCIawbY78'
         }
     });
+
     layer.setMap(map);
+
+    google.maps.event.addListener(layer, 'click', function(event) {
+        loadData(event.latLng.Ya, event.latLng.Xa);
+    });
 }
 
 function codeAddress() {
@@ -45,7 +51,7 @@ function codeAddress() {
                 icon: 'images/house.png'
             });
             markersArray.push(marker);
-            loadData(results);
+            loadData(results[0].geometry.location.Ya, results[0].geometry.location.Xa);
             map.setZoom(14);
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
@@ -53,18 +59,22 @@ function codeAddress() {
     });
 }
 
-function loadData(results) {
+function loadData(y, x) {
     $.ajax({
         type: "GET",
         url: "get-district.php",
         data: {
-            'long': results[0].geometry.location.Ya,
-            'lat': results[0].geometry.location.Xa
+            'long': y,
+            'lat': x
         },
         dataType: "json"
     }).done(function(key) {
-        addPollingStations(polling_stations[key]);
-        districtData(districts[key]);
+        //don't reload the same data... that would be silly
+        if(loadedDistrict !== key){
+            addPollingStations(polling_stations[key]);
+            addDistrictData(districts[key]);
+            loadedDistrict = key;
+        }
     });
 }
 
@@ -86,7 +96,7 @@ function addPollingStations(data) {
     }
 }
 
-function districtData(data){
+function addDistrictData(data){
     string = '';
     string += '<h5>'+data.district+': ' + data.name + '</h5>';
     string += '<h6>Voters: '+data.voters+'</h6>';
@@ -114,7 +124,7 @@ function districtData(data){
 
 function listenMarker(marker, info) {
     
-    google.maps.event.addListener(marker, 'click', function() {
+    google.maps.event.addListener(marker, 'click', function(data) {
         if(tooltip){
             tooltip.close();
         }
@@ -122,6 +132,7 @@ function listenMarker(marker, info) {
             content: info
         });
         tooltip.open(map, marker);
+
     });
     //toolTipsArray[tooltip];
 }
