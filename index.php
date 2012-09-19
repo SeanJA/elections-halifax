@@ -114,7 +114,7 @@
 		<footer class="row">
 			<div class="ten columns">
 				<p>
-					Disclaimer: While I tried to get this stuff right, I makde no promise that I did (I am a private citizen and not a major news organization, I don't have access to the latest data all the time). If you see a problem (or you have some of the links that I missed...), or you want something else on here... <span class="hide-for-small inline" style="display: inline;">you can use the feedback link on the site,</span> hit me up on twitter <a target="_blank" href="http://twitter.com/SeanJA">@SeanJA</a>, or on app.net <a target="_blank" href="http://alpha.app.net">@SeanJA</a> I will see what I can do.
+					Disclaimer: While I tried to get this stuff right, I makde no promise that I did (I am a private citizen and not a major news organization, I don't have access to the latest data all the time). If you see a problem (or you have some of the links that I missed...), or you want something else on here... <span class="hide-for-small inline" style="display: inline;">you can use the feedback link on the site,</span> hit me up on twitter <a target="_blank" href="http://twitter.com/SeanJA">@SeanJA</a>, on app.net <a target="_blank" href="http://alpha.app.net">@SeanJA</a>, create an issue in <a target="_blank" href="https://github.com/SeanJA/elections-halifax">github</a> or send me a support email at <a href="mailto:tickets@hrmelection.uservoice.com">tickets@hrmelection.uservoice.com</a>. I will see what I can do.
 				</p>
 				<p>
 					Wanna see me elsewhere / see other things that I have done? <a target="_blank" href="http://seanja.info">Take a look over here.</a>
