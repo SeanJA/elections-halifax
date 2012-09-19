@@ -34,7 +34,8 @@ function initialize() {
     layer.setMap(map);
 
     google.maps.event.addListener(layer, 'click', function(event) {
-        loadData(event.latLng.Ya, event.latLng.Xa);
+        clearMarkers();
+        loadData(event.latLng);
     });
 }
 
@@ -51,40 +52,35 @@ function codeAddress() {
                 icon: 'images/house.png'
             });
             markersArray.push(marker);
-            loadData(results[0].geometry.location.Ya, results[0].geometry.location.Xa);
-            map.setZoom(14);
+            loadData(results[0].geometry.location);
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
         }
     });
 }
 
-function loadData(y, x) {
+function loadData(location) {
     $.ajax({
         type: "GET",
         url: "get-district.php",
         data: {
-            'long': y,
-            'lat': x
+            'long': location.Ya,
+            'lat': location.Xa
         },
         dataType: "json"
     }).done(function(key) {
-        //don't reload the same data... that would be silly
-        if(loadedDistrict !== key){
-            clearMarkers();
-            addPollingStations(polling_stations[key]);
-            addDistrictData(districts[key]);
-            loadedDistrict = key;
-        }
+        addPollingStations(polling_stations[key]);
+        addDistrictData(districts[key]);
+        loadedDistrict = key;
     });
 }
 
 function addPollingStations(data) {
     for (i in data) {
         var pos = data[i];
-        if(pos){
+        if (pos) {
             var location = new google.maps.LatLng(pos['lat'], pos['long']);
-            var info = '<b>'+pos['place_name'] + '</b>' + '<p>' + pos['address'] + ', ' + pos['city'] + '</p>';
+            var info = '<b>' + pos['place_name'] + '</b>' + '<p>' + pos['address'] + ', ' + pos['city'] + '</p>';
             var marker = new google.maps.Marker({
                 map: map,
                 position: location,
@@ -97,36 +93,38 @@ function addPollingStations(data) {
     }
 }
 
-function addDistrictData(data){
-    string = '';
-    string += '<h5>'+data.district+': ' + data.name + '</h5>';
-    string += '<h6>Voters: '+data.voters+'</h6>';
-    string += '<h6> Candidates: </h6>';
-    
-    for(i in data['candidates']){
-        if(typeof data['candidates'][i] !== 'undefined'){
-            var cdt = data['candidates'][i];
-            string += '<strong>'+cdt.name+'</strong>';
-            string += '<ul>';
-                if(cdt.site !== ''){
-                    string += '<li>Website : <a target="_blank" href="'+cdt.site+'">'+cdt.site+'</a></li>';
+function addDistrictData(data) {
+    if (data) {
+        string = '';
+        string += '<h5>' + data.district + ': ' + data.name + '</h5>';
+        string += '<h6>Voters: ' + data.voters + '</h6>';
+        string += '<h6> Candidates: </h6>';
+
+        for (i in data['candidates']) {
+            if (typeof data['candidates'][i] !== 'undefined') {
+                var cdt = data['candidates'][i];
+                string += '<strong>' + cdt.name + '</strong>';
+                string += '<ul>';
+                if (cdt.site !== '') {
+                    string += '<li>Website : <a target="_blank" href="' + cdt.site + '">' + cdt.site + '</a></li>';
                 }
-                if(cdt.twitter !== ''){
-                    string += '<li>Twitter : <a target="_blank" href="https://twitter.com/'+cdt.twitter+'">'+cdt.twitter+'</a></li>';
+                if (cdt.twitter !== '') {
+                    string += '<li>Twitter : <a target="_blank" href="https://twitter.com/' + cdt.twitter + '">' + cdt.twitter + '</a></li>';
                 }
-                if(cdt.email !== ''){
-                    string += '<li>Email : <a target="_blank" href="mailto:'+cdt.email+'">'+cdt.email+'</a></li>';
+                if (cdt.email !== '') {
+                    string += '<li>Email : <a target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a></li>';
                 }
-            string += '</ul>';
+                string += '</ul>';
+            }
         }
+        $('#district-data').html(string).addClass('panel');
     }
-    $('#district-data').html(string).addClass('panel');
 }
 
 function listenMarker(marker, info) {
-    
+
     google.maps.event.addListener(marker, 'click', function(data) {
-        if(tooltip){
+        if (tooltip) {
             tooltip.close();
         }
         tooltip = new google.maps.InfoWindow({
@@ -166,3 +164,6 @@ function listenMarker(marker, info) {
     });
 
 })(jQuery);
+
+
+//http://localhost/elections-halifax/get-district.php?long=
