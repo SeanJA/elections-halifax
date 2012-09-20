@@ -79,3 +79,32 @@
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Droid Sans', sans-serif;
 }
+
+@media only screen and (max-width: 767px){
+	#uvTabLabel{
+		display: none !important;
+	}
+}
+
+.inline {
+	display: inline !important;
+}
+
+body { 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.panel{
+	border-radius: 5px;
+	opacity: 0.6;
+	background-color: #000000;
+    border-color: #000000;
+    color: #FFFFFF;
+}
+
+.no-margin{
+	margin: 0 !important;
+}
