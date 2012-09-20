@@ -143,17 +143,6 @@
 		</script>
 		<script src="javascripts/foundation/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
-		<script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.forms.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
-		<script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
-		<script src="javascripts/foundation/jquery.placeholder.js"></script>
 		<script src="javascripts/foundation/app.js?1"></script>
 		<script>
             var _gaq=[['_setAccount','<?php echo $google_analytics; ?>'],['_trackPageview']];
