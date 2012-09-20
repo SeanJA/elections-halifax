@@ -47,7 +47,7 @@
 				<p>
 					Your district may have changed, find your new one.
 				</p>
-				<hr>
+				<hr />
 			</div>
 		</header>
 		<div class="row hide-for-small">
