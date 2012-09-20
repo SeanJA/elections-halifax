@@ -143,7 +143,7 @@
 		</script>
 		<script src="javascripts/foundation/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
-		<script src="javascripts/foundation/app.js?1"></script>
+		<script src="javascripts/foundation/app.js?2"></script>
 		<script>
             var _gaq=[['_setAccount','<?php echo $google_analytics; ?>'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
