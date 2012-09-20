@@ -141,19 +141,6 @@ function listenMarker(marker, info) {
 (function($) {
 
     $(function() {
-        $(document).foundationAlerts();
-        $(document).foundationButtons();
-        $(document).foundationAccordion();
-        $(document).foundationNavigation();
-        $(document).foundationCustomForms();
-        $(document).foundationMediaQueryViewer();
-        $(document).foundationTabs({
-            callback: $.foundation.customForms.appendCustomMarkup
-        });
-
-        $(document).tooltips();
-        $('input, textarea').placeholder();
-
         initialize();
         $('#find-it').click(function() {
             $('#district-data').html('').removeClass('panel');
