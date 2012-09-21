@@ -27,7 +27,7 @@ function initialize() {
     var layer = new google.maps.FusionTablesLayer({
         query: {
             select: 'col2',
-            from: '1gaFfc1uY9wbu7M_W-WOol1zvXLO3mVOCIawbY78'
+            from: '1QKmWKHvGOcq4qzKAokl4FhyMcaf1Oqug2iDxtxc'
         }
     });
 
