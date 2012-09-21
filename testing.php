@@ -15,5 +15,3 @@ foreach($polling_stations as $district=>$stations){
 		}
 	}
 }
-
-//http://localhost/elections-halifax/get-district.php?
