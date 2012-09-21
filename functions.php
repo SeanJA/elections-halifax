@@ -63,7 +63,7 @@ class pointLocation {
     }
 }
 
-function get_district($x, $y){
+function get_district($long, $lat){
 	$fh = fopen('data/districts_kml.csv', 'r');
 	$first = true;
 	while($row = fgetcsv($fh)){
@@ -71,7 +71,8 @@ function get_district($x, $y){
 			$first = false;
 			continue;
 		}
-		$point = $x.','.$y;
+        
+		$point = $long.','.$lat;
 		$polygon = strip_tags(trim($row[1]));
 		$polygon = explode(" ", $polygon);
 		$p = new pointLocation();
