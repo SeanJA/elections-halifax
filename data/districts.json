@@ -6,21 +6,15 @@
         "candidates": [
             {
                 "name": "Barry Dalrymple",
-                "site":"http://elect.barrydal.ca/",
+                "site":"http://barrydal.ca/",
                 "twitter":"",
                 "email":"barry@barrydal.ca"
             },
             {
                 "name": "Steve Streatch",
-                "site":"http://www.halifax.ca/districts/dist01/dist01.html",
+                "site":"http://www.stevestreatch.com/",
                 "twitter":"",
                 "email":"streats@halifax.ca"
-            },
-            {
-                "name": "Judith Risser",
-                "site":"http://www.facebook.com/DistrictOneJudithRisser",
-                "twitter":"",
-                "email":"risserjm@hotmail.com"
             }
         ]
     },
@@ -33,7 +27,7 @@
                 "name": "Laurie Cook",
                 "site":"http://www.cookforcouncil.com/",
                 "twitter":"@LaurieCook2012",
-                "email":"chutzpah@accesswave.ca"
+                "email":"info@cookforcouncil.com"
             },
             {
                 "name": "Will Gilligan",
