@@ -1,10 +1,11 @@
-<?php require 'settings.php'; ?><!DOCTYPE html>
+<!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
+	<?php require 'settings.php'; ?>
 	<!--<![endif]-->
 	<head>
 		<meta charset="utf-8"><!-- Set the viewport width to device width for mobile -->
@@ -30,8 +31,8 @@
 			<?php echo isset($title)? $title : 'HRM - Find Your District'; ?>
 		</title><!-- Included CSS Files -->
 		<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="stylesheets/app.css" type="text/css">
-		<script src="javascripts/foundation/modernizr.foundation.js"></script>
+		<link rel="stylesheet" href="stylesheets/app.css?<?php echo filemtime('stylesheets/app.css'); ?>" type="text/css">
+		<script src="javascripts/foundation/modernizr.foundation.js?<?php echo filemtime('javascripts/foundation/modernizr.foundation.js'); ?>"></script>
 		<!-- IE Fix for HTML5 Tags -->
 		<!--[if lt IE 9]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,6 +40,21 @@
 	</head>
 	<body>
 		<a class="hide-for-small" href="https://github.com/SeanJA/elections-halifax"><img id="fork-me" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+		<div class="row">
+			<div class="twelve columns">
+				  <ul class="nav-bar">
+				    <li>
+				    	<a href="index">Home</a>
+				    </li>
+				    <li>
+				    	<a href="mayoral">Mayoral Candidates</a>
+				    </li>
+				    <li>
+				    	<a href="news">News</a>
+				    </li>
+				  </ul>
+			</div>
+		</div>
 		<header class="row">
 			<div class="twelve columns">
 				<h2 class="fancy">
@@ -49,42 +65,7 @@
 				</p>
 				<hr />
 			</div>
-			<div class="twelve columns">
-				<div class="fixed contain-to-grid">
-					<nav class="top-bar">
-					  <ul>
-					    <li class="name"><h1><a href="#">Title</a></h1></li>
-					    <li class="toggle-topbar"><a href="#"></a></li>
-					  </ul>
-					  <section>
-					    <ul class="left">
-					      <li><a href="#">Link</a></li>
-					    </ul>
 
-					    <ul class="right">
-					      <li><a href="#">Link</a></li>
-					    </ul>
-					  </section>
-					</nav>
-
-
-					<nav class="top-bar">
-						<section>
-							<ul>
-								<li>
-									<a href="index">Home</a>
-								</li>
-								<li>
-									<a href="mayoral">Mayoral Candidates</a>
-								</li>
-								<li>
-									<a href="news">News</a>
-								</li>
-							</ul>
-						</section>
-					</nav>
-				</div>
-			</div>
 		</header>
 
 		<div class="row hide-for-small">

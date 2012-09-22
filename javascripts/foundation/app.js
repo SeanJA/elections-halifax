@@ -141,6 +141,7 @@ function listenMarker(marker, info) {
 (function($) {
 
     $(function() {
+        $(document).foundationNavigation();
         initialize();
         $('#find-it').click(function() {
             $('#district-data').html('').removeClass('panel');

@@ -24,7 +24,6 @@
         $(this).children('.flyout').hide();
       });
     }
-
   };
 
 })( jQuery );
