@@ -16,6 +16,12 @@
 			<div class="eight columns">
 				<div id="map-canvas" class="map"></div>
 				<div id="district-data">
+					<div class="panel">
+						<h5>Hello</h5>
+						<p>
+							If you were to click/tap on a district on the map or use the "Find It!" button, this box would be filled with useful information about the district.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
