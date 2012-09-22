@@ -23,8 +23,7 @@ include 'templates/header.php'; ?>
 						</div>
 					</div>
 				</div>
-				<div class="one columns"></div>
-				<div class="three columns">
+				<div class="four columns">
 					<a class="twitter-timeline"  href="https://twitter.com/search?q=%40fredforhrm" data-widget-id="249529366168616961" data-related="fredforhrm,seanja">Tweets about "@fredforhrm"</a>
 				</div>
 				
@@ -55,9 +54,7 @@ include 'templates/header.php'; ?>
 					</div>
 				</div>
 
-				<div class="one columns"></div>
-
-				<div class="three columns">
+				<div class="four columns">
 					<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%40MikeSavageHRM" data-widget-id="249529939819380736" data-related="MikeSavageHRM,seanja">Tweets about "@MikeSavageHRM"</a>
 				</div>
 				
@@ -88,12 +85,41 @@ include 'templates/header.php'; ?>
 					</div>
 				</div>
 
-				<div class="one columns"></div>
-				
-				<div class="three columns">
+				<div class="four columns">
 					<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%40tomaskformore" data-widget-id="249530144702726144" data-related="tomaskformore,seanja">Tweets about "@tomaskformore"</a>
 				</div>
 				
 			</div>
+
+			<div class="row">
+				<hr />
+			</div>
+
+			<div class="row">
+
+				<div class="three columns">
+					<img src="images/stan-head.png" alt="" />
+				</div>
+
+				<div class="one columns"></div>
+
+				<div class="four columns">
+					<div class="panel">
+						<h3>Tuxedo Stan</h3>
+						<a href="http://spaydaynovascotia.wordpress.com/" target="_blank">
+							<img src="images/stan.png" alt="" />
+						</a>
+						<div>
+							<a class="fc-webicon twitter" href="http://twitter.com/TuxedoStan" target="_blank">@TuxedoStan</a>
+							<a class="fc-webicon facebook" href="http://www.facebook.com/Tuxedo-Party/391884324181841" target="_blank">Tuxedo Party</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="four columns">
+					<a class="twitter-timeline" data-dnt=true href="https://twitter.com/search?q=%40TuxedoStan" data-widget-id="249557822415704065" data-related="TuxedoStan,seanja">Tweets about "@TuxedoStan"</a>
+				</div>
+			</div>
+
 		</div>
 <?php include 'templates/footer.php';
