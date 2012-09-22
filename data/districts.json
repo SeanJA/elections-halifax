@@ -8,13 +8,15 @@
                 "name": "Barry Dalrymple",
                 "site":"http://barrydal.ca/",
                 "twitter":"",
-                "email":"barry@barrydal.ca"
+                "email":"barry@barrydal.ca",
+                "facebook":""
             },
             {
                 "name": "Steve Streatch",
                 "site":"http://www.stevestreatch.com/",
                 "twitter":"",
-                "email":"streats@halifax.ca"
+                "email":"streats@halifax.ca",
+                "facebook":""
             }
         ]
     },
@@ -27,37 +29,43 @@
                 "name": "Laurie Cook",
                 "site":"http://www.cookforcouncil.com/",
                 "twitter":"@LaurieCook2012",
-                "email":"info@cookforcouncil.com"
+                "email":"info@cookforcouncil.com",
+                "facebook":""
             },
             {
                 "name": "Will Gilligan",
                 "site":"http://www.willgilligan.com/",
                 "twitter":"@willgilligan2",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Dave Hendsbee",
                 "site":"http://www.halifax.ca/districts/dist03/dist03.html",
                 "twitter":"@David_Hendsbee",
-                "email":"david.hendsbee@halifax.ca"
+                "email":"david.hendsbee@halifax.ca",
+                "facebook":""
             },
             {
                 "name": "Gail McQuarrie",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Jason Josey",
-                "site":"https://www.facebook.com/pages/Jason-Josey-for-Councillor-District-2/334054726631298",
+                "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":"https://www.facebook.com/pages/Jason-Josey-for-Councillor-District-2/334054726631298"
             },
             {
                 "name": "Keith Leahy",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             }
         ]
     },
@@ -70,19 +78,22 @@
                 "name": "Jackie Barkhouse",
                 "site":"http://www.jackiebarkhouse.ca/",
                 "twitter":"@jackiebarkhouse",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Bill Karsten",
                 "site":"http://www.billkarsten2012.ca/",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Jim MacDonald",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             }
         ]
     },
@@ -95,19 +106,22 @@
                 "name": "Angela Jones",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Lorelei Nicoll",
                 "site":"http://engagingcoleharbour.ca/",
                 "twitter":"@loreleinicoll",
-                "email":"info@engagingcoleharbour.ca"
+                "email":"info@engagingcoleharbour.ca",
+                "facebook":""
             },
             {
                 "name": "Barry A. Smith",
                 "site":"http://barrysmith.ca/",
                 "twitter":"",
-                "email":"info@barrysmith.ca"
+                "email":"info@barrysmith.ca",
+                "facebook":""
             }
         ]
     },
@@ -120,43 +134,50 @@
                 "name": "Sam Austin",
                 "site":"http://www.samaustin.ca/",
                 "twitter":"@samaustin2012",
-                "email":"sam@samaustin.ca"
+                "email":"sam@samaustin.ca",
+                "facebook":""
             },
             {
                 "name": "Ken Bowman",
                 "site":"http://www.kenforhrmcouncil.com/",
                 "twitter":"@kenforcouncil",
-                "email":"kenforcouncil@eastlink.ca"
+                "email":"kenforcouncil@eastlink.ca",
+                "facebook":""
             },
             {
                 "name": "Sonya Dudka",
                 "site":"http://www.sonyadudka.com/",
                 "twitter":"@sonyadudka",
-                "email":"sonyadudka2012@gmail.com"
+                "email":"sonyadudka2012@gmail.com",
+                "facebook":""
             },
             {
                 "name": "Bryn Jones-Vaillancourt",
                 "site":"http://bryndartcentre.ca/",
                 "twitter":"@bryndartcentre",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Gloria McCluskey",
                 "site":"http://www.gloriamccluskey.ca/",
                 "twitter":"@DartmouthG",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Kate Watson",
                 "site":"http://www.kwatson.ca/",
                 "twitter":"@DartmouthKate",
-                "email":"kate@kwatson.ca"
+                "email":"kate@kwatson.ca",
+                "facebook":""
             },
             {
                 "name": "Bill Zebedee",
                 "site":"http://www.zebedee.ca/",
                 "twitter":"@Zebedee4Council",
-                "email":"zebedee2012@gmail.com"
+                "email":"zebedee2012@gmail.com",
+                "facebook":""
             }
         ]
     },
@@ -169,13 +190,15 @@
                 "name": "Darren Fisher",
                 "site":"http://darrenfisher.ca/",
                 "twitter":"@DarrenFisherNS",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Jerry Pye",
                 "site":"http://www.jerrypye.ca/",
                 "twitter":"",
-                "email":"jerrypye1@ns.sympatico.ca"
+                "email":"jerrypye1@ns.sympatico.ca",
+                "facebook":""
             }
         ]
     },
@@ -186,33 +209,38 @@
         "candidates": [
             {
                 "name": "Mike MacDonell",
-                "site":"https://www.facebook.com/mikemacdonellHRM",
+                "site":"",
                 "twitter":"@MacDonellHRM",
-                "email":""
+                "email":"",
+                "facebook":"https://www.facebook.com/mikemacdonellHRM"
             },
             {
                 "name": "Dawgfather PHD",
                 "site":"http://www.thedf.ca/",
                 "twitter":"@dawgfatherphd",
-                "email":"info@thedf.ca"
+                "email":"info@thedf.ca",
+                "facebook":""
             },
             {
                 "name": "Waye Mason",
                 "site":"http://www.wayemason.ca/",
                 "twitter":"@wayemason",
-                "email":"election@wayemason.ca "
+                "email":"election@wayemason.ca",
+                "facebook":""
             },
             {
                 "name": "Gerry Walsh",
                 "site":"http://www.gerrywalsh.ca/",
                 "twitter":"@gerrywalshHRM",
-                "email":"gerry@gerrywalsh.ca"
+                "email":"gerry@gerrywalsh.ca",
+                "facebook":""
             },
             {
                 "name": "Sue Uteck",
                 "site":"http://www.sueuteck.ca/",
                 "twitter":"",
-                "email":"sue@sueuteck.ca"
+                "email":"sue@sueuteck.ca",
+                "facebook":""
             }
         ]
     },
@@ -225,31 +253,36 @@
                 "name": "Karen Dempsey",
                 "site":"http://karendempsey.ca",
                 "twitter":"@karenfdempsey",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Doug MacDonald",
                 "site":"http://dougmacdonald.ca/",
                 "twitter":"@district8doug",
-                "email":"Doug@dougmacdonald.ca"
+                "email":"Doug@dougmacdonald.ca",
+                "facebook":""
             },
             {
                 "name": "James McKay",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Dawn Marie Sloane",
                 "site":"http://www.dawnsloane.ca/",
                 "twitter":"@northsidesloane",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Jennifer Watts",
                 "site":"http://www.jenniferwattshalifax.ca/",
                 "twitter":"@JenniferHalifax",
-                "email":"campaign@jenniferwattshalifax.ca"
+                "email":"campaign@jenniferwattshalifax.ca",
+                "facebook":""
             }
         ]
     },
@@ -262,25 +295,29 @@
                 "name": "Giovanni (John) Abati",
                 "site":"http://abati4hrm.ca/",
                 "twitter":"",
-                "email":"abati4hrm@hotmail.ca"
+                "email":"abati4hrm@hotmail.ca",
+                "facebook":""
             },
             {
                 "name": "Richard MacLean",
                 "site":"http://www.votemaclean.com/",
                 "twitter":"@RichardMacLean",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Linda Mosher",
                 "site":"http://www.lindamosher.ca/",
                 "twitter":"@Kicking",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "John Wimberly",
                 "site":"http://wimberly.ca/",
                 "twitter":"",
-                "email":"info@wimberly.ca"
+                "email":"info@wimberly.ca",
+                "facebook":""
             }
         ]
     },
@@ -291,21 +328,24 @@
         "candidates": [
             {
                 "name": "Kurt Bulger",
-                "site":"https://www.facebook.com/kurtforchange",
+                "site":"",
                 "twitter":"@KurtForChange",
-                "email":""
+                "email":"",
+                "facebook":"https://www.facebook.com/kurtforchange"
             },
             {
                 "name": "John Thibeau",
                 "site":"http://johnthibeau.com",
                 "twitter":"@John_Thibeau",
-                "email":"john@johnthibeau.com"
+                "email":"john@johnthibeau.com",
+                "facebook":""
             },
             {
                 "name": "Russell Walker",
                 "site":"",
                 "twitter":"@RussellWalker13",
-                "email":"russellwalker2012@yahoo.ca"
+                "email":"russellwalker2012@yahoo.ca",
+                "facebook":""
             }
         ]
     },
@@ -318,25 +358,29 @@
                 "name": "Steve Adams",
                 "site":"",
                 "twitter":"",
-                "email":"adamss@halifax.ca"
+                "email":"adamss@halifax.ca",
+                "facebook":""
             },
             {
                 "name": "Peter Grabosky",
                 "site":"http://hrmpetergrabosky.ca/",
                 "twitter":"@hrmpetegrabosky",
-                "email":"petergrabosky@yahoo.ca"
+                "email":"petergrabosky@yahoo.ca",
+                "facebook":""
             },
             {
                 "name": "Jim Hoskins",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Tom Lavers",
                 "site":"http://electtomlavers.ca",
                 "twitter":"",
-                "email":"electtomlavers@eastlink.ca"
+                "email":"electtomlavers@eastlink.ca",
+                "facebook":""
             }
         ]
     },
@@ -349,25 +393,29 @@
                 "name": "P. Rano Khokhar",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Reg Rankin",
                 "site":"http://rankinfile.ca",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Bruce E. Smith",
                 "site":"http://votebruce.org/",
                 "twitter":"",
-                "email":"votebruce@votebruce.org"
+                "email":"votebruce@votebruce.org",
+                "facebook":""
             },
             {
                 "name": "Mary Wile",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             }
         ]
     },
@@ -380,19 +428,22 @@
                 "name": "Peter Lund",
                 "site":"http://peterlund.ca/",
                 "twitter":"",
-                "email":"peter@peterlund.ca"
+                "email":"peter@peterlund.ca",
+                "facebook":""
             },
             {
                 "name": "Doug Poulton",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Matt Whitman",
                 "site":"http://mattwhitman.ca/",
                 "twitter":"",
-                "email":"Matt@MattWhitman.ca"
+                "email":"Matt@MattWhitman.ca",
+                "facebook":""
             }
         ]
     },
@@ -405,13 +456,15 @@
                 "name": "Brad (BJ) Johns",
                 "site":"",
                 "twitter":"",
-                "email":"brad.johns@halifax.ca"
+                "email":"brad.johns@halifax.ca",
+                "facebook":""
             },
             {
                 "name": "Laurie Sauers",
                 "site":"http://www.lauriesauers-hrm-district14-election.com/",
                 "twitter":"@lauriesauers",
-                "email":"sauers.laurie@gmail.com"
+                "email":"sauers.laurie@gmail.com",
+                "facebook":""
             }
         ]
     },
@@ -424,31 +477,36 @@
                 "name": "Steve Craig",
                 "site":"http://stevecraig.ca/",
                 "twitter":"@SteveCraig4HRM",
-                "email":"steve@stevecraig.ca"
+                "email":"steve@stevecraig.ca",
+                "facebook":""
             },
             {
                 "name": "Janet Langille",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Stephen Taylor",
                 "site":"http://www.taylor4council.ca/",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Curt Wentzell",
                 "site":"http://curtwentzell.com/",
                 "twitter":"@CurtWentzell",
-                "email":"curtwentzell@eastllnk.ca"
+                "email":"curtwentzell@eastllnk.ca",
+                "facebook":""
             },
             {
                 "name": "Ian Wilson",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             }
         ]
     },
@@ -461,13 +519,15 @@
                 "name": "Tim Outhit",
                 "site":"http://mybedfordwentworth.ca/",
                 "twitter":"@mybedfordentworth",
-                "email":""
+                "email":"",
+                "facebook":""
             },
             {
                 "name": "Mark Ward",
                 "site":"",
                 "twitter":"",
-                "email":""
+                "email":"",
+                "facebook":""
             }
         ]
     }
