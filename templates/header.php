@@ -42,20 +42,20 @@
 		<a class="hide-for-small" href="https://github.com/SeanJA/elections-halifax"><img id="fork-me" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 		<div class="row">
 			<div class="twelve columns">
-				  <ul class="nav-bar">
-				    <li>
-				    	<a href="index">Home</a>
-				    </li>
-				    <li>
-				    	<a href="mayoral">Mayoral Candidates</a>
-				    </li>
-				    <li>
-				    	<a href="news">News</a>
-				    </li>
-				  </ul>
+				<ul class="nav-bar">
+					<li>
+						<a href="index#header">Home</a>
+					</li>
+					<li>
+						<a href="mayoral#header">Mayoral Candidates</a>
+					</li>
+					<li>
+						<a href="news#header">News</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<header class="row">
+		<header class="row" id="header">
 			<div class="twelve columns">
 				<h2 class="fancy">
 					<?php echo isset($title)? $title : 'HRM - Find Your District'; ?>
