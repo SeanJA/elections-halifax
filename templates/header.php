@@ -27,7 +27,7 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 		<title>
-			HRM - Find Your District
+			<?php echo isset($title)? $title : 'HRM - Find Your District'; ?>
 		</title><!-- Included CSS Files -->
 		<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="stylesheets/app.css" type="text/css">
@@ -42,14 +42,51 @@
 		<header class="row">
 			<div class="twelve columns">
 				<h2 class="fancy">
-					HRM - Find your new district
+					<?php echo isset($title)? $title : 'HRM - Find Your District'; ?>
 				</h2>
 				<p>
-					Your district may have changed, find your new one.
+					<?php echo isset($subtitle)? $subtitle : 'Your district may have changed, find your new one.'; ?>
 				</p>
 				<hr />
 			</div>
+			<div class="twelve columns">
+				<div class="fixed contain-to-grid">
+					<nav class="top-bar">
+					  <ul>
+					    <li class="name"><h1><a href="#">Title</a></h1></li>
+					    <li class="toggle-topbar"><a href="#"></a></li>
+					  </ul>
+					  <section>
+					    <ul class="left">
+					      <li><a href="#">Link</a></li>
+					    </ul>
+
+					    <ul class="right">
+					      <li><a href="#">Link</a></li>
+					    </ul>
+					  </section>
+					</nav>
+
+
+					<nav class="top-bar">
+						<section>
+							<ul>
+								<li>
+									<a href="index">Home</a>
+								</li>
+								<li>
+									<a href="mayoral">Mayoral Candidates</a>
+								</li>
+								<li>
+									<a href="news">News</a>
+								</li>
+							</ul>
+						</section>
+					</nav>
+				</div>
+			</div>
 		</header>
+
 		<div class="row hide-for-small">
 			<div class="seven columns centered">
 				<ul class="link-list no-margin">

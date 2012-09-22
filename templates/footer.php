@@ -52,6 +52,7 @@
 			var districts = <?php echo $districts; ?>;
 		</script>
 		<script src="javascripts/foundation/jquery.js?<?php echo filemtime('javascripts/foundation/jquery.js'); ?>"></script>
+		<script src="javascripts/foundation/jquery.foundation.navigation.js?<?php echo filemtime('javascripts/foundation/jquery.js'); ?>"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
 		<script src="javascripts/foundation/app.min.js?<?php echo filemtime('javascripts/foundation/app.js'); ?>"></script>
 		<script>
