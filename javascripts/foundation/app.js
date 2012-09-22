@@ -103,18 +103,22 @@ function addDistrictData(data) {
         for (i in data['candidates']) {
             if (typeof data['candidates'][i] !== 'undefined') {
                 var cdt = data['candidates'][i];
-                string += '<strong>' + cdt.name + '</strong>';
-                string += '<ul>';
+                string += '<h6>' + cdt.name + '</h6>';
+                string += '<div>';
                 if (cdt.site !== '') {
-                    string += '<li>Website : <a target="_blank" href="' + cdt.site + '">' + cdt.site + '</a></li>';
+                    string += '<a class="fc-webicon rss" target="_blank" href="' + cdt.site + '">' + cdt.site + '</a>';
                 }
                 if (cdt.twitter !== '') {
-                    string += '<li>Twitter : <a target="_blank" href="https://twitter.com/' + cdt.twitter + '">' + cdt.twitter + '</a></li>';
+                    string += '<a class="fc-webicon twitter" target="_blank" href="https://twitter.com/' + cdt.twitter + '">' + cdt.twitter + '</a>';
                 }
                 if (cdt.email !== '') {
-                    string += '<li>Email : <a target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a></li>';
+                    string += '<a class="fc-webicon mail" target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a>';
                 }
-                string += '</ul>';
+                if(cdt.facebook !== ''){
+                    string += '<a class="fc-webicon facebook" target="_blank" href="' + cdt.facebook + '">' + cdt.facebook + '</a>';
+                }
+                string += '<hr />'
+                string += '</div>';
             }
         }
         $('#district-data').html(string).addClass('panel');
@@ -148,7 +152,7 @@ function listenMarker(marker, info) {
             clearMarkers();
             codeAddress();
             window.location.hash = "map-canvas";
-        })
+        });
     });
 
 })(jQuery);
