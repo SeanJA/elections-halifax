@@ -54,7 +54,7 @@
 		<script src="javascripts/foundation/jquery.js?<?php echo filemtime('javascripts/foundation/jquery.js'); ?>"></script>
 		<script src="javascripts/foundation/jquery.foundation.navigation.js?<?php echo filemtime('javascripts/foundation/jquery.js'); ?>"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=<?php echo $sensor; ?>&amp;key=<?php echo $api_key; ?>"></script>
-		<script src="javascripts/foundation/app.min.js?<?php echo filemtime('javascripts/foundation/app.min.js'); ?>"></script>
+		<script src="javascripts/foundation/app.js?<?php echo filemtime('javascripts/foundation/app.js'); ?>"></script>
 		<script>
             var _gaq=[['_setAccount','<?php echo $google_analytics; ?>'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
