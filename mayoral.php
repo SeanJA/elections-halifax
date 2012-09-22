@@ -18,8 +18,10 @@ include 'templates/header.php'; ?>
 							<img src="images/fred.png" alt="" />
 						</a>
 						<div>
+							<a class="fc-webicon rss" href="http://fredconnorsforhrm.ca" target="_blank">fredconnorsforhrm.ca</a>
 							<a class="fc-webicon twitter" href="http://twitter.com/fredforhrm" target="_blank">@fredforhrm</a>
 							<a class="fc-webicon facebook" href="http://www.facebook.com/fredforhalifax" target="_blank">fredforhalifax</a>
+							<a class="fc-webicon mail" target="_blank" href="mailto:fred@fredconnorsforhrm.ca">fred@fredconnorsforhrm.ca</a>
 						</div>
 					</div>
 				</div>
@@ -48,8 +50,10 @@ include 'templates/header.php'; ?>
 							<img src="images/mike.png" alt="" />
 						</a>
 						<div>
+							<a class="fc-webicon rss" href="http://mikesavage.ca" target="_blank">mikesavage.ca</a>
 							<a class="fc-webicon twitter" href="http://twitter.com/MikeSavageHRM" target="_blank">@MikeSavageHRM</a>
 							<a class="fc-webicon facebook" href="http://www.facebook.com/Ilikemikesavage" target="_blank">Ilikemikesavage</a>
+							<a class="fc-webicon mail" target="_blank" href="mailto:information@mikesavage.ca">information@mikesavage.ca</a>
 						</div>
 					</div>
 				</div>
@@ -79,8 +83,10 @@ include 'templates/header.php'; ?>
 							<img src="images/tom.png" alt="" />
 						</a>
 						<div>
+							<a class="fc-webicon rss" href="http://ask4more.ca" target="_blank">ask4more.ca</a>
 							<a class="fc-webicon twitter" href="http://twitter.com/tomaskformore" target="_blank">@tomaskformore</a>
 							<a class="fc-webicon facebook" href="http://www.facebook.com/tommartinask4more" target="_blank">tommartinask4more</a>
+							<a class="fc-webicon mail" target="_blank" href="mailto:info@tommartinformayor.ca">info@tommartinformayor.ca</a>
 						</div>
 					</div>
 				</div>
@@ -110,8 +116,10 @@ include 'templates/header.php'; ?>
 							<img src="images/stan.png" alt="" />
 						</a>
 						<div>
+							<a class="fc-webicon rss" href="http://spaydaynovascotia.wordpress.com" target="_blank">spaydaynovascotia.wordpress.com</a>
 							<a class="fc-webicon twitter" href="http://twitter.com/TuxedoStan" target="_blank">@TuxedoStan</a>
 							<a class="fc-webicon facebook" href="http://www.facebook.com/Tuxedo-Party/391884324181841" target="_blank">Tuxedo Party</a>
+							<a class="fc-webicon mail" target="_blank" href="mailto:spaydaynovascotia@gmail.com?subject=Tuxedo%20Stan">spaydaynovascotia@gmail.com</a>
 						</div>
 					</div>
 				</div>
