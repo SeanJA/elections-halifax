@@ -11,6 +11,7 @@ function clearMarkers() {
             markersArray[i].setMap(null);
         }
     }
+    markersArray = [];
 }
 
 
