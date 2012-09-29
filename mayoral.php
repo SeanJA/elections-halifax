@@ -81,7 +81,7 @@ ksort($mayors);
 	<?php foreach($mayors as $m): ?>
 		<div class="row">
 			<div class="three columns">
-				<img src="images/<?php echo $m['image']; ?>-head.png" alt="" />
+				<img src="images/<?php echo $m['image']; ?>-head.png?1" alt="" />
 			</div>
 			<div class="one columns"></div>
 			<div class="four columns">
@@ -89,7 +89,7 @@ ksort($mayors);
 					<h3><?php echo $m['name']; ?></h3>
 					<?php if($m['website']): ?>
 						<a href="<?php echo $m['website']; ?>" target="_blank">
-							<img src="images/<?php echo $m['image']; ?>.png" alt="" />
+							<img src="images/<?php echo $m['image']; ?>.png?1" alt="" />
 						</a>
 					<?php endif; ?>
 					<div>
@@ -108,7 +108,7 @@ ksort($mayors);
 					</div>
 				</div>
 			</div>
-			<div class="four columns">
+			<div class="four columns twitter-timeline">
 				<a class="twitter-timeline"  href="https://twitter.com/search?q=%40<?php echo $m['twitter']; ?>" data-widget-id="<?php echo $m['timeline']; ?>" data-related="<?php echo $m['twitter']; ?>,seanja">Tweets about "@<?php echo $m['twitter']; ?>"</a>
 			</div>
 		</div>

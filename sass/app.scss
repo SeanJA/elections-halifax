@@ -93,11 +93,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 //override those pesky widget settings
-iframe#twitter-widget-1,
-iframe#twitter-widget-2,
-iframe#twitter-widget-3,
-iframe#twitter-widget-4,
-iframe#twitter-widget-5,
+.twitter-timeline iframe,
 iframe#sr-paper-frame-1{
 	display: block !important;
     margin: 0 auto !important;
