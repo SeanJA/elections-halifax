@@ -6,7 +6,7 @@
 				</h4>
 				<input type="text" value="b3h 1s3" name="postal-code" id="postal-code" />
 				<a id="find-it" class="large button">Find It!</a>
-				<div class="hide-for-small">
+				<div class="hide-for-small twitter-timeline">
 					<a class="twitter-timeline" href="https://twitter.com/search?q=%23votehrm" data-widget-id="246648916957859840">
 					 	Vote HRM Tweets
 					</a>
