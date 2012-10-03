@@ -13,8 +13,9 @@ $mayors = array(
 		'website'=>'http://fredconnorsforhrm.ca',
 		'twitter'=>'fredforhrm',
 		'facebook'=>'fredforhalifax',
-		'email'=>'fred@fredconnorsforhrm.ca',
+		'email'=>'info@fredconnorsforhrm.ca',
 		'timeline'=>'249529366168616961',
+		'phone'=>'902-817-8683',
 	),
 	'eisses'=>array(
 		'name'=>'Aaron Eisses',
@@ -24,6 +25,7 @@ $mayors = array(
 		'facebook'=>'',
 		'email'=>'',
 		'timeline'=>'250928851901878272',
+		'phone'=>'902-441-1826',
 	),
 	'martin'=>array(
 		'name'=>'Tom Martin',
@@ -33,6 +35,7 @@ $mayors = array(
 		'facebook'=>'tommartinask4more',
 		'email'=>'info@tommartinformayor.ca',
 		'timeline'=>'249530144702726144',
+		'phone'=>'902-430-3997',
 	),
 	'savage'=>array(
 		'name'=>'Mike Savage',
@@ -42,6 +45,7 @@ $mayors = array(
 		'facebook'=>'Ilikemikesavage',
 		'email'=>'information@mikesavage.ca',
 		'timeline'=>'249529939819380736',
+		'phone'=>'902-446-2012 ',
 	),
 	'stan'=>array(
 		'name'=>'Tuxedo Stan',
@@ -51,6 +55,7 @@ $mayors = array(
 		'facebook'=>'Tuxedo-Party/391884324181841',
 		'email'=>'spaydaynovascotia@gmail.com?subject=Tuxedo%20Stan',
 		'timeline'=>'249557822415704065',
+		'phone'=>'',
 	),
 	'mccormack'=>array(
 		'name'=>'Robert Wesley McCormack',
@@ -58,8 +63,9 @@ $mayors = array(
 		'website'=>'',
 		'twitter'=>'McCormack4Mayor',
 		'facebook'=>'266325656718395',
-		'email'=>'',
+		'email'=>'r.wc.mccormack@gmail.com',
 		'timeline'=>'252084938248167424',
+		'phone'=>'902-293-4986',
 	),
 	'mackie'=>array(
 		'name'=>'Steven Mackie ',
@@ -67,8 +73,9 @@ $mayors = array(
 		'website'=>'',
 		'twitter'=>'Mackie4Mayor',
 		'facebook'=>'',
-		'email'=>'',
+		'email'=>'steve.mackie@ns.sympatico.ca',
 		'timeline'=>'252087780266614784',
+		'phone'=>'902-495-7307',
 	),
 );
 
