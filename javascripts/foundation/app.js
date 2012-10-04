@@ -107,16 +107,19 @@ function addDistrictData(data) {
                 string += '<h6>' + cdt.name + '</h6>';
                 string += '<div>';
                 if (cdt.site !== '') {
-                    string += '<a class="fc-webicon rss" target="_blank" href="' + cdt.site + '">' + cdt.site + '</a>';
+                    string += '<a class="fc-webicon rss" title="Candidate\'s website" target="_blank" href="' + cdt.site + '">' + cdt.site + '</a>';
                 }
                 if (cdt.twitter !== '') {
-                    string += '<a class="fc-webicon twitter" target="_blank" href="https://twitter.com/' + cdt.twitter + '">' + cdt.twitter + '</a>';
+                    string += '<a class="fc-webicon twitter" title="Twitter Account" target="_blank" href="https://twitter.com/' + cdt.twitter + '">' + cdt.twitter + '</a>';
                 }
                 if (cdt.email !== '') {
-                    string += '<a class="fc-webicon mail" target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a>';
+                    string += '<a class="fc-webicon mail" title="Send an email" target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a>';
                 }
                 if(cdt.facebook !== ''){
-                    string += '<a class="fc-webicon facebook" target="_blank" href="' + cdt.facebook + '">' + cdt.facebook + '</a>';
+                    string += '<a class="fc-webicon facebook" title="Facebook page" target="_blank" href="' + cdt.facebook + '">' + cdt.facebook + '</a>';
+                }
+                if(cdt.herald !== ''){
+                    string += '<a class="fc-webicon herald" title="Profile On The Chronicle Herald" target="_blank" href="' + cdt.herald + '">' + cdt.herald + '</a>';
                 }
                 string += '<hr />'
                 string += '</div>';
