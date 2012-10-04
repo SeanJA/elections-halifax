@@ -134,3 +134,8 @@ body {
 .fc-webicon:hover {
     margin: 0 0 5px 5px;
 }
+
+.no-svg .fc-webicon.herald { background: url("../images/social/herald.png"); }
+.no-svg .fc-webicon.herald.large { background: url("../images/social/herald.png"); }
+.no-svg .fc-webicon.herald.small { background: url("../images/social/herald.png"); }
+.svg .fc-webicon.herald { background: url("../images/social/herald.png"); }
