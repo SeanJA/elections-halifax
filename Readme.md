@@ -20,3 +20,5 @@ Open File Halifax: for the district data
 Josh Bousel for the image:   http://www.flickr.com/photos/joshbousel/36548458/
 
 Dennis Jarvis for the images: http://www.flickr.com/photos/archer10/2261846148/ and http://www.flickr.com/photos/archer10/6812321707/
+
+Map backgrounds by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA. : http://maps.stamen.com
