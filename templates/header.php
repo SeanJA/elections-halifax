@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-	<?php require 'settings.php'; ?>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
 	<!--<![endif]-->
+	<?php require 'settings.php'; ?>
 	<head>
 		<meta charset="utf-8"><!-- Set the viewport width to device width for mobile -->
 		<meta property="fb:admins" content="119100167" />
@@ -18,13 +18,14 @@
 		<meta property="og:url" content="<?php echo $meta['url']; ?>" />
 		<meta property="og:site_name" content="<?php echo $meta['site-name']; ?>" />
 		<!-- twitter has it's own meta tags... grumble grumble -->
-		<meta name="twitter:card" content="<?php echo $meta['twitter-card-type']; ?>" >
-		<meta name="twitter:url" content="<?php echo $meta['url']; ?>" >
-		<meta name="twitter:creator" content="<?php echo $meta['twitter-author']; ?>" >
-		<meta name="twitter:title" content="<?php echo $meta['title']; ?>" >
-		<meta name="twitter:description" content="<?php echo $meta['descirption']; ?>" >
-		<meta name="twitter:image" content="<?php echo $meta['image']; ?>" >
-
+		<?php if (stristr($_SERVER['HTTP_USER_AGENT'], 'Twitterbot')): ?>
+			<meta name="twitter:card" content="<?php echo $meta['twitter-card-type']; ?>" >
+			<meta name="twitter:url" content="<?php echo $meta['url']; ?>" >
+			<meta name="twitter:creator" content="<?php echo $meta['twitter-author']; ?>" >
+			<meta name="twitter:title" content="<?php echo $meta['title']; ?>" >
+			<meta name="twitter:description" content="<?php echo $meta['descirption']; ?>" >
+			<meta name="twitter:image" content="<?php echo $meta['image']; ?>" >
+		<?php endif; ?>
 		<meta name="viewport" content="width=device-width">
 		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 		<title>
@@ -32,6 +33,37 @@
 		</title><!-- Included CSS Files -->
 		<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="stylesheets/app.css?<?php echo filemtime('stylesheets/app.css'); ?>" type="text/css">
+		<style>
+			<?php $bg = rand(1,5); ?>
+			/* some final overrides for a fancy changing background */
+			@media only screen and (min-width: 767px){
+				body{
+					background: url(images/bg<?php echo $bg; ?>.jpg) no-repeat center center fixed;
+					<?php if($bg === 2): ?>
+					color: #fff;
+					<?php endif; ?>
+				}
+				<?php if($bg === 2): ?>
+					.panel{
+						background-color: rgba(255, 255, 255, 0.6);
+					    border-color: #fff;
+					    color: #000;
+					}
+				<?php endif; ?>
+				<?php if(in_array($bg, array(4,5))): ?>
+					header{
+						background-color: rgba(0, 0, 0, 0.8);
+						color: #fff;
+					}
+					header h4{
+						padding: 5px;
+					}
+					.panel{
+							background-color: rgba(0, 0, 0, 0.8);
+					}
+				<?php endif; ?>
+			}
+		</style>
 		<script src="javascripts/foundation/modernizr.foundation.js?<?php echo filemtime('javascripts/foundation/modernizr.foundation.js'); ?>"></script>
 		<!-- IE Fix for HTML5 Tags -->
 		<!--[if lt IE 9]>
@@ -81,7 +113,7 @@
 						<div class="g-plus" data-action="share" data-annotation="bubble" data-height="15" data-href="http://election.seanja.com"></div>
 					</li>
 					<li>
-						<div class="fb-like" ref="top" data-href="http://election.seanja.com" data-send="true" data-layout="button_count" data-width="212" data-show-faces="false"></div>
+						<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Felection.seanja.com&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;ref=top" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:175px; height:35px;" allowTransparency="true"></iframe>
 					</li>
 				</ul>
 			</div>

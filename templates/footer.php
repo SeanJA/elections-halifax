@@ -16,7 +16,9 @@
 						<div class="g-plus" data-action="share" data-annotation="bubble" data-height="15" data-href="http://election.seanja.com"></div>
 					</li>
 					<li>
-						<div class="fb-like" ref="bottom" data-href="http://election.seanja.com" data-send="true" data-layout="button_count" data-width="212" data-show-faces="false"></div>
+
+						<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Felection.seanja.com&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35&amp;ref=bottom" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:175px; height:35px;" allowTransparency="true"></iframe>
+
 					</li>
 				</ul>
 			</div>
@@ -80,39 +82,5 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
 		  })();
 		</script>
-
-		<?php $bg = rand(1,5); ?>
-
-		<style>
-			/* some final overrides for a fancy changing background */
-			@media only screen and (min-width: 767px){
-				body{
-					background: url(images/bg<?php echo $bg; ?>.jpg) no-repeat center center fixed;
-					<?php if($bg === 2): ?>
-					color: #fff;
-					<?php endif; ?>
-				}
-				<?php if($bg === 2): ?>
-					.panel{
-						background-color: rgba(255, 255, 255, 0.6);
-					    border-color: #fff;
-					    color: #000;
-					}
-				<?php endif; ?>
-				<?php if(in_array($bg, array(4,5))): ?>
-					header{
-						background-color: rgba(0, 0, 0, 0.8);
-						color: #fff;
-					}
-					header h4{
-						padding: 5px;
-					}
-					.panel{
-							background-color: rgba(0, 0, 0, 0.8);
-					}
-				<?php endif; ?>
-			}
-		</style>
-
 	</body>
 </html>
