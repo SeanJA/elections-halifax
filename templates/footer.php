@@ -81,7 +81,7 @@
 		  })();
 		</script>
 
-		<?php $bg = rand(1,3); ?>
+		<?php $bg = rand(1,5); ?>
 
 		<style>
 			/* some final overrides for a fancy changing background */
@@ -94,9 +94,21 @@
 				}
 				<?php if($bg === 2): ?>
 					.panel{
-						background-color: #fff;
+						background-color: rgba(255, 255, 255, 0.6);
 					    border-color: #fff;
 					    color: #000;
+					}
+				<?php endif; ?>
+				<?php if(in_array($bg, array(4,5))): ?>
+					header{
+						background-color: rgba(0, 0, 0, 0.8);
+						color: #fff;
+					}
+					header h4{
+						padding: 5px;
+					}
+					.panel{
+							background-color: rgba(0, 0, 0, 0.8);
 					}
 				<?php endif; ?>
 			}

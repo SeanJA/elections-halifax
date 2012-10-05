@@ -1,9 +1,11 @@
 <?php include 'templates/header.php'; ?>
 		<div role="main" class="row">
 			<div class="four columns">
-				<h4>
-					Enter your postal code
-				</h4>
+				<header>
+					<h4>
+						Enter your postal code
+					</h4>
+				</header>
 				<input type="text" value="b3h 1s3" name="postal-code" id="postal-code" />
 				<a id="find-it" class="large button">Find It!</a>
 				<div class="hide-for-small twitter-timeline">
