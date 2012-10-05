@@ -86,25 +86,25 @@
                 "name": "Jackie Barkhouse",
                 "site": "http://www.jackiebarkhouse.ca/",
                 "twitter": "@jackiebarkhouse",
-                "email": "",
-                "facebook": "",
-                "herald": ""
+                "email": "jackie@jackiebarkhouse.ca",
+                "facebook": "http://www.facebook.com/jackie.barkhouse.5",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/jackie-barkhouse"
             },
             {
                 "name": "Bill Karsten",
                 "site": "http://www.billkarsten2012.ca/",
                 "twitter": "",
-                "email": "",
+                "email": "contact@billkarsten2012.ca",
                 "facebook": "",
-                "herald": ""
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/bill-karsten"
             },
             {
                 "name": "Jim MacDonald",
-                "site": "",
-                "twitter": "",
-                "email": "",
-                "facebook": "",
-                "herald": ""
+                "site": "http://jimfordistrict3.ca",
+                "twitter": "@jimfordistrict3",
+                "email": "macdonaldi@hotmail.com",
+                "facebook": "http://facebook.com/jimfordistrict3",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/jim-macdonald"
             }
         ]
     },
@@ -126,16 +126,16 @@
                 "site": "http://engagingcoleharbour.ca/",
                 "twitter": "@loreleinicoll",
                 "email": "info@engagingcoleharbour.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "http://facebook.com/LoreleiNicoll",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/lorelei-nicoll"
             },
             {
                 "name": "Barry A. Smith",
                 "site": "http://barrysmith.ca/",
                 "twitter": "",
                 "email": "info@barrysmith.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "http://facebook.com/barrysmith2012",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/barry-a-smith"
             }
         ]
     },
@@ -149,32 +149,32 @@
                 "site": "http://www.samaustin.ca/",
                 "twitter": "@samaustin2012",
                 "email": "sam@samaustin.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "http://facebook.com/SamAustinDartmouthCentre",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/sam-austin"
             },
             {
                 "name": "Ken Bowman",
                 "site": "http://www.kenforhrmcouncil.com/",
                 "twitter": "@kenforcouncil",
                 "email": "kenforcouncil@eastlink.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "http://facebook.com/KenforCouncil",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/ken-bowman"
             },
             {
                 "name": "Sonya Dudka",
                 "site": "http://www.sonyadudka.com/",
                 "twitter": "@sonyadudka",
                 "email": "sonyadudka2012@gmail.com",
-                "facebook": "",
-                "herald": ""
+                "facebook": "https://facebook.com/sonyadudka2012",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/sonya-dudka"
             },
             {
                 "name": "Bryn Jones-Vaillancourt",
                 "site": "http://bryndartcentre.ca/",
                 "twitter": "@bryndartcentre",
-                "email": "",
-                "facebook": "",
-                "herald": ""
+                "email": "bryndartcentre@bellaliant.net",
+                "facebook": "http://facebook.com/bryndartcentre",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/bryn-jones-vaillancourt"
             },
             {
                 "name": "Gloria McCluskey",
@@ -182,23 +182,23 @@
                 "twitter": "@DartmouthG",
                 "email": "",
                 "facebook": "",
-                "herald": ""
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/gloria-mccluskey"
             },
             {
                 "name": "Kate Watson",
                 "site": "http://www.kwatson.ca/",
                 "twitter": "@DartmouthKate",
                 "email": "kate@kwatson.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "http://facebook.com/dartmouthkate",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/kate-watson"
             },
             {
                 "name": "Bill Zebedee",
                 "site": "http://www.zebedee.ca/",
                 "twitter": "@Zebedee4Council",
                 "email": "zebedee2012@gmail.com",
-                "facebook": "",
-                "herald": ""
+                "facebook": "https://facebook.com/pages/Zebedee4Council/153877864715506",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/bill-zebedee"
             }
         ]
     },
@@ -211,17 +211,17 @@
                 "name": "Darren Fisher",
                 "site": "http://darrenfisher.ca/",
                 "twitter": "@DarrenFisherNS",
-                "email": "",
-                "facebook": "",
-                "herald": ""
+                "email": "darrenfisher@ns.sympatico.ca",
+                "facebook": "http://www.facebook.com/edthelakes",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/darren-fisher"
             },
             {
                 "name": "Jerry Pye",
                 "site": "http://www.jerrypye.ca/",
-                "twitter": "",
+                "twitter": "@JerryPye",
                 "email": "jerrypye1@ns.sympatico.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "https://facebook.com/profile.php?id=643781399",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/jerry-pye"
             }
         ]
     },
@@ -232,43 +232,43 @@
         "candidates": [
             {
                 "name": "Mike MacDonell",
-                "site": "",
+                "site": "http://mikemacdonell.ca",
                 "twitter": "@MacDonellHRM",
-                "email": "",
+                "email": "macdonellmike@gmail.com",
                 "facebook": "https://www.facebook.com/mikemacdonellHRM",
-                "herald": ""
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/mike-macdonell"
             },
             {
                 "name": "Dawgfather PHD",
                 "site": "http://www.thedf.ca/",
                 "twitter": "@dawgfatherphd",
                 "email": "info@thedf.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "http://www.facebook.com/TheDawgFatherPHD",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/jerry-reddick-dawg-father-phd"
             },
             {
                 "name": "Waye Mason",
                 "site": "http://www.wayemason.ca/",
                 "twitter": "@wayemason",
-                "email": "election@wayemason.ca",
-                "facebook": "",
-                "herald": ""
+                "email": "waye@wayemason.ca",
+                "facebook": "https://www.facebook.com/votewayemason",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/waye-mason"
             },
             {
                 "name": "Gerry Walsh",
                 "site": "http://www.gerrywalsh.ca/",
                 "twitter": "@gerrywalshHRM",
                 "email": "gerry@gerrywalsh.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "https://www.facebook.com/VoteGerryWalsh",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/gerry-walsh"
             },
             {
                 "name": "Sue Uteck",
                 "site": "http://www.sueuteck.ca/",
-                "twitter": "",
+                "twitter": "@sueuteck7",
                 "email": "sue@sueuteck.ca",
-                "facebook": "",
-                "herald": ""
+                "facebook": "http://facebook.com/sue.uteck",
+                "herald": "http://thechronicleherald.ca/municipal2012/candidate/sue-uteck"
             }
         ]
     },
