@@ -1,3 +1,5 @@
+/*global jQuery:true, $:true, google:true, polling_stations:true, districts:true*/
+/*jslint browser: true, white: true, vars: true, devel: true, bitwise: true, debug: true, nomen: true, sloppy: false, indent: 4*/
 var geocoder;
 var map;
 var markersArray = [];
@@ -23,7 +25,7 @@ function initialize() {
         zoom: 11,
         center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
+    };
     map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     var layer = new google.maps.FusionTablesLayer({
         query: {
@@ -34,9 +36,93 @@ function initialize() {
 
     layer.setMap(map);
 
-    google.maps.event.addListener(layer, 'click', function(event) {
+    google.maps.event.addListener(layer, 'click', function (event) {
         clearMarkers();
         loadData(event.latLng);
+    });
+}
+
+function listenMarker(marker, info) {
+
+    google.maps.event.addListener(marker, 'click', function () {
+        if (tooltip) {
+            tooltip.close();
+        }
+        tooltip = new google.maps.InfoWindow({
+            content: info
+        });
+        tooltip.open(map, marker);
+
+    });
+    //toolTipsArray[tooltip];
+}
+
+function addPollingStations(data) {
+    for (var i in data) {
+        var pos = data[i];
+        if (pos) {
+            var location = new google.maps.LatLng(pos.lat, pos.long);
+            var info = '<b>' + pos.place_name + '</b>' + '<p>' + pos.address + ', ' + pos.city + '</p>';
+            var marker = new google.maps.Marker({
+                map: map,
+                position: location,
+                title: pos.place_name,
+                icon: 'images/administration.png'
+            });
+            listenMarker(marker, info);
+            markersArray.push(marker);
+        }
+    }
+}
+
+function addDistrictData(data) {
+    if (data) {
+        var string = '';
+        string += '<h5>' + data.district + ': ' + data.name + '</h5>';
+        string += '<h6>Voters: ' + data.voters + '</h6>';
+        string += '<h6> Candidates: </h6>';
+
+        for (var i in data.candidates) {
+            if (typeof data.candidates[i] !== 'undefined') {
+                var cdt = data.candidates[i];
+                string += '<h6>' + cdt.name + '</h6>';
+                string += '<div>';
+                if (cdt.site !== '') {
+                    string += '<a class="fc-webicon rss" title="Candidate\'s website" target="_blank" href="' + cdt.site + '">' + cdt.site + '</a>';
+                }
+                if (cdt.twitter !== '') {
+                    string += '<a class="fc-webicon twitter" title="Twitter Account" target="_blank" href="https://twitter.com/' + cdt.twitter + '">' + cdt.twitter + '</a>';
+                }
+                if (cdt.email !== '') {
+                    string += '<a class="fc-webicon mail" title="Send an email" target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a>';
+                }
+                if (cdt.facebook !== '') {
+                    string += '<a class="fc-webicon facebook" title="Facebook page" target="_blank" href="https://facebook.com/' + cdt.facebook + '">' + cdt.facebook + '</a>';
+                }
+                if (cdt.herald !== '') {
+                    string += '<a class="fc-webicon herald" title="Profile On The Chronicle Herald" target="_blank" href="http://thechronicleherald.ca/municipal2012/candidate/' + cdt.herald + '">http://thechronicleherald.ca/municipal2012/candidate/' + cdt.herald + '</a>';
+                }
+                string += '<hr />';
+                string += '</div>';
+            }
+        }
+        $('#district-data').html(string).addClass('panel');
+    }
+}
+
+function loadData(location) {
+    $.ajax({
+        type: "GET",
+        url: "get-district.php",
+        data: {
+            'long': location.Ya,
+            'lat': location.Xa
+        },
+        dataType: "json"
+    }).done(function (key) {
+        addPollingStations(polling_stations[key]);
+        addDistrictData(districts[key]);
+        loadedDistrict = key;
     });
 }
 
@@ -44,7 +130,7 @@ function codeAddress() {
     var address = document.getElementById('postal-code').value + ' Nova Scotia, Canada';
     geocoder.geocode({
         'address': address
-    }, function(results, status) {
+    }, function (results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
             map.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({
@@ -60,98 +146,12 @@ function codeAddress() {
     });
 }
 
-function loadData(location) {
-    $.ajax({
-        type: "GET",
-        url: "get-district.php",
-        data: {
-            'long': location.Ya,
-            'lat': location.Xa
-        },
-        dataType: "json"
-    }).done(function(key) {
-        addPollingStations(polling_stations[key]);
-        addDistrictData(districts[key]);
-        loadedDistrict = key;
-    });
-}
+(function ($) {
 
-function addPollingStations(data) {
-    for (i in data) {
-        var pos = data[i];
-        if (pos) {
-            var location = new google.maps.LatLng(pos['lat'], pos['long']);
-            var info = '<b>' + pos['place_name'] + '</b>' + '<p>' + pos['address'] + ', ' + pos['city'] + '</p>';
-            var marker = new google.maps.Marker({
-                map: map,
-                position: location,
-                title: pos['place_name'],
-                icon: 'images/administration.png'
-            });
-            listenMarker(marker, info);
-            markersArray.push(marker);
-        }
-    }
-}
-
-function addDistrictData(data) {
-    if (data) {
-        string = '';
-        string += '<h5>' + data.district + ': ' + data.name + '</h5>';
-        string += '<h6>Voters: ' + data.voters + '</h6>';
-        string += '<h6> Candidates: </h6>';
-
-        for (i in data['candidates']) {
-            if (typeof data['candidates'][i] !== 'undefined') {
-                var cdt = data['candidates'][i];
-                string += '<h6>' + cdt.name + '</h6>';
-                string += '<div>';
-                if (cdt.site !== '') {
-                    string += '<a class="fc-webicon rss" title="Candidate\'s website" target="_blank" href="' + cdt.site + '">' + cdt.site + '</a>';
-                }
-                if (cdt.twitter !== '') {
-                    string += '<a class="fc-webicon twitter" title="Twitter Account" target="_blank" href="https://twitter.com/' + cdt.twitter + '">' + cdt.twitter + '</a>';
-                }
-                if (cdt.email !== '') {
-                    string += '<a class="fc-webicon mail" title="Send an email" target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a>';
-                }
-                if(cdt.facebook !== ''){
-                    string += '<a class="fc-webicon facebook" title="Facebook page" target="_blank" href="https://facebook.com/' + cdt.facebook + '">' + cdt.facebook + '</a>';
-                }
-                if(cdt.herald !== ''){
-                    string += '<a class="fc-webicon herald" title="Profile On The Chronicle Herald" target="_blank" href="http://thechronicleherald.ca/municipal2012/candidate/' + cdt.herald + '">http://thechronicleherald.ca/municipal2012/candidate/' + cdt.herald + '</a>';
-                }
-                string += '<hr />'
-                string += '</div>';
-            }
-        }
-        $('#district-data').html(string).addClass('panel');
-    }
-}
-
-function listenMarker(marker, info) {
-
-    google.maps.event.addListener(marker, 'click', function(data) {
-        if (tooltip) {
-            tooltip.close();
-        }
-        tooltip = new google.maps.InfoWindow({
-            content: info
-        });
-        tooltip.open(map, marker);
-
-    });
-    //toolTipsArray[tooltip];
-}
-
-
-
-(function($) {
-
-    $(function() {
+    $(function () {
         $(document).foundationNavigation();
         initialize();
-        $('#find-it').click(function() {
+        $('#find-it').click(function () {
             $('#district-data').html('').removeClass('panel');
             clearMarkers();
             codeAddress();
