@@ -116,7 +116,7 @@ function addDistrictData(data) {
                     string += '<a class="fc-webicon mail" title="Send an email" target="_blank" href="mailto:' + cdt.email + '">' + cdt.email + '</a>';
                 }
                 if(cdt.facebook !== ''){
-                    string += '<a class="fc-webicon facebook" title="Facebook page" target="_blank" href="' + cdt.facebook + '">' + cdt.facebook + '</a>';
+                    string += '<a class="fc-webicon facebook" title="Facebook page" target="_blank" href="https://facebook.com/' + cdt.facebook + '">' + cdt.facebook + '</a>';
                 }
                 if(cdt.herald !== ''){
                     string += '<a class="fc-webicon herald" title="Profile On The Chronicle Herald" target="_blank" href="http://thechronicleherald.ca/municipal2012/candidate/' + cdt.herald + '">http://thechronicleherald.ca/municipal2012/candidate/' + cdt.herald + '</a>';
