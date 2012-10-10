@@ -40,7 +40,6 @@ window.app = window.app || (function () {
                     content: info
                 });
                 tooltip.open(map, marker);
-
             });
         },
         addPollingStations = function (data) {
@@ -53,7 +52,8 @@ window.app = window.app || (function () {
                         map: map,
                         position: location,
                         title: pos.place_name,
-                        icon: 'images/administration.png'
+                        icon: 'images/administration.png',
+                        animation: google.maps.Animation.DROP
                     });
                     listenMarker(marker, info);
                     markersArray.push(marker);
@@ -120,6 +120,7 @@ window.app = window.app || (function () {
         },
         //code an address (the one that is in the postal code box)
         codeAddress: function () {
+            $('.googft-info-window').parent().parent().parent().parent().find('div > img').click();
             $('#district-data').html('').removeClass('panel');
             clearMarkers();
             var address = $('#postal-code').val() + ' Nova Scotia, Canada';
@@ -131,10 +132,12 @@ window.app = window.app || (function () {
                     var marker = new google.maps.Marker({
                         map: map,
                         position: results[0].geometry.location,
-                        icon: 'images/house.png'
+                        icon: 'images/house.png',
+                        animation: google.maps.Animation.b
                     });
                     markersArray.push(marker);
                     loadData(results[0].geometry.location);
+
                     window.location.hash = "map-canvas";
                 } else {
                     $('#district-data').html('Geocode was not successful for the following reason: ' + status).addClass('panel');
